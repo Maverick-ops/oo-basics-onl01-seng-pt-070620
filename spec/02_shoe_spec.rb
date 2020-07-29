@@ -36,7 +36,7 @@ describe 'Shoe' do
 
   describe '#cobble' do
     it 'Your shoe is as good as new!' do
-      expect($stdout).to receive(:puts)
+      expect($stdout).to receive(:puts).with("Your shoe is as good as new!")
       shoe.cobble
     end
 
